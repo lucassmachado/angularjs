@@ -3,11 +3,16 @@
   <head>
     <title>Hello Counter</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-	<script src="counterController.js"></script>
+	<script type="text/javascript">
+	  var app = angular.module('app', []);
+	  app.controller('loopController', function($scope) {
+	    $scope.fruits = ['banana', 'apple', 'orange'];
+	  });
+	</script>
   </head>
-  <body ng-controller="counterController">
-    <a href="" ng-click="addOne()">Add 1</a>
-	<hr />
-	<h1>Counter value: {{counter}}</h1>
+  <body ng-controller="loopController">
+    <ul>
+	  <li ng-repeat="fruit in fruits">{{fruit}}</li>
+	</ul>
   </body>
 </html>
