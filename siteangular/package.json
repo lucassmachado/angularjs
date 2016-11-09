@@ -1,0 +1,19 @@
+{
+  "name": "siteangular",
+  "version": "1.0.0",
+  "description": "Um site de teste",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Machado",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0"
+  }
+}
